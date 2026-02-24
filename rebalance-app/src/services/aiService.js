@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { CONFIG } from '../constants/config';
 
-const API_KEY = process.env.EXPO_PUBLIC_GEMINI_API_KEY;
+const API_KEY = process.env.EXPO_PUBLIC_GEMINI_API_KEY || CONFIG.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 /**
