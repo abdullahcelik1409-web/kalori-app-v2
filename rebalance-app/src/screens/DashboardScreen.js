@@ -988,6 +988,7 @@ export default function DashboardScreen() {
             <StatusBar
                 barStyle={isDarkMode ? "light-content" : "dark-content"}
                 backgroundColor={theme.surface}
+                translucent={false}
             />
 
             {/* Main Content Wrapper for Web Centering */}

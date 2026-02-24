@@ -19,8 +19,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/rebalance_final_v11_transparent.png",
         "backgroundColor": "#000000"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -69,7 +69,7 @@ export default function WelcomeScreen({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#000000" />
+            <StatusBar barStyle="light-content" backgroundColor="#000000" translucent={false} />
 
             <ScrollView contentContainerStyle={{ flexGrow: 1 }} bounces={false}>
                 <View style={styles.content}>
