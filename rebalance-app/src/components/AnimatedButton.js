@@ -11,7 +11,7 @@ const AnimatedButton = ({ children, onPress, style, scaleTo = 0.95, disabled = f
         if (disabled) return;
         Animated.spring(scaleAnim, {
             toValue: scaleTo,
-            useNativeDriver: false,
+            useNativeDriver: true,
             friction: 4,
             tension: 40
         }).start();
@@ -21,7 +21,7 @@ const AnimatedButton = ({ children, onPress, style, scaleTo = 0.95, disabled = f
         if (disabled) return;
         Animated.spring(scaleAnim, {
             toValue: 1,
-            useNativeDriver: false,
+            useNativeDriver: true,
             friction: 4,
             tension: 40
         }).start();

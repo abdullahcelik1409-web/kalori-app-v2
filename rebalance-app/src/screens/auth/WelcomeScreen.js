@@ -74,7 +74,7 @@ export default function WelcomeScreen({ navigation }) {
             <ScrollView contentContainerStyle={{ flexGrow: 1 }} bounces={false}>
                 <View style={styles.content}>
                     {/* Background Blobs Layer */}
-                    <View pointerEvents="none" style={StyleSheet.absoluteFillObject}>
+                    <View style={[StyleSheet.absoluteFillObject, { pointerEvents: 'none' }]}>
                         <Animated.View style={[
                             styles.blob,
                             styles.blob1,

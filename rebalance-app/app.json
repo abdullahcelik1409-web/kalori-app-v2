@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/rebalance_final_v11_transparent.png",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/rebalance_final_v11_transparent.png",
       "resizeMode": "contain",
