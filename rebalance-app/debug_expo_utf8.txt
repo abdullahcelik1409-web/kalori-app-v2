@@ -1,0 +1,42 @@
+﻿node.exe :   --non-interactive is not supported, use $CI=1 instead
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  --non-interac...e $CI=1 instead:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+env: load .env
+env: export EXPO_PUBLIC_SUPABASE_URL EXPO_PUBLIC_SUPABASE_ANON_KEY EXPO_PUBLIC_GEMINI_API_KEY
+Starting project at C:\Users\abdul\kalori sayma uygulamas─▒\rebalance-app
+Starting Metro Bundler
+The following packages should be updated for best compatibility with the installed expo version:
+  react@19.0.0 - expected version: 19.1.0
+  react-dom@19.0.0 - expected version: 19.1.0
+  react-native-screens@4.23.0 - expected version: ~4.16.0
+Your project may not work correctly until you install the expected versions of the packages.
+Waiting on http://localhost:8086
+Logs for your project will appear below.
+Web Bundling failed 505ms index.js (546 modules)
+Unable to resolve "../components/ProgressBar" from "src\screens\DashboardScreen.js"
+[0m [90m 11 |[39m [36mimport[39m { generateWeeklyReport } [36mfrom[39m [32m'../services/pdfService'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m { getLevelInfo } [36mfrom[39m [32m'../services/gamificationService'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 13 |[39m [36mimport[39m [33mProgressBar[39m [36mfrom[39m [32m'../components/ProgressBar'[39m[33m;[39m
+ [90m    |[39m                          [31m[1m^[22m[39m
+ [90m 14 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mImagePicker[39m [36mfrom[39m [32m'expo-image-picker'[39m[33m;[39m
+ [90m 15 |[39m [36mimport[39m { [33mCameraView[39m[33m,[39m useCameraPermissions } [36mfrom[39m [32m'expo-camera'[39m[33m;[39m
+ [90m 16 |[39m [36mimport[39m { useAudioRecorder[33m,[39m [33mRecordingPresets[39m[33m,[39m setAudioModeAsync[33m,[39m requestRecordingPermissionsAsync } [36mfrom[39m [32m'expo-audio'[39m[33m;[39m[0m
+
+Import stack:
+
+ src\screens\DashboardScreen.js
+ | import "../components/ProgressBar"
+
+ App.js
+ | import "./src/screens/DashboardScreen"
+
+ index.js
+ | import "./App"
+
+ 
+ | import "./index"
+

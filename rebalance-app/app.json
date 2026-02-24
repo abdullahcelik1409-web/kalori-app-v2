@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "rebalance-app",
+    "slug": "rebalance-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/rebalance_final_v11_transparent.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/rebalance_final_v11_transparent.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/rebalance_final_v11_transparent.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

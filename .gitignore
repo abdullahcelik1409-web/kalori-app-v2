@@ -1,0 +1,73 @@
+# dependencies
+node_modules/
+rebalance-app/node_modules/
+
+# Expo
+rebalance-app/.expo/
+rebalance-app/dist/
+rebalance-app/web-build/
+rebalance-app/expo-env.d.ts
+
+# Native
+rebalance-app/.kotlin/
+rebalance-app/*.orig.*
+rebalance-app/*.jks
+rebalance-app/*.p8
+rebalance-app/*.p12
+rebalance-app/*.key
+rebalance-app/*.mobileprovision
+
+# Metro
+rebalance-app/.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+rebalance-app/.env
+rebalance-app/.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+rebalance-app/ios
+rebalance-app/android
+
+# Application specific
+rebalance-app/expo_bundle_attempt_utf8.txt
+rebalance-app/expo_output.txt
+rebalance-app/expo_output_utf8.txt
+rebalance-app/expo_verify_fixed.txt
+rebalance-app/start_app.bat
+rebalance-app/start_mobile.bat
+rebalance-app/start_mobile_lan.bat
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/

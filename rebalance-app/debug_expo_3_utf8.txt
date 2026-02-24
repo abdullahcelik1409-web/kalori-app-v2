@@ -1,0 +1,20 @@
+﻿node.exe :   --non-interactive is not supported, use $CI=1 instead
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  --non-interac...e $CI=1 instead:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+env: load .env
+env: export EXPO_PUBLIC_SUPABASE_URL EXPO_PUBLIC_SUPABASE_ANON_KEY EXPO_PUBLIC_GEMINI_API_KEY
+Starting project at C:\Users\abdul\kalori sayma uygulamas─▒\rebalance-app
+Starting Metro Bundler
+The following packages should be updated for best compatibility with the installed expo version:
+  react@19.0.0 - expected version: 19.1.0
+  react-dom@19.0.0 - expected version: 19.1.0
+  react-native-screens@4.23.0 - expected version: ~4.16.0
+Your project may not work correctly until you install the expected versions of the packages.
+Waiting on http://localhost:8088
+Logs for your project will appear below.
+Web Bundled 1996ms index.js (802 modules)
+ LOG  [web] Logs will appear in the browser console
