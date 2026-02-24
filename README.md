@@ -23,7 +23,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları takip ed
 2. **Bağımlılıkları Yükleyin:**
    ```bash
    cd rebalance-app
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 ### 🔑 Yapılandırma (Önemli!)
@@ -50,7 +50,29 @@ Uygulamayı başlatmak için:
 npx expo start
 ```
 
-Tarayıcıda açılan QR kodu **Expo Go** uygulaması ile taratarak projeyi mobil cihazınızda test edebilirsiniz.
+---
+
+## 🤝 Canlı Çalışma ve Mobil Test (Vibe Coding)
+
+Başka geliştiricilerle veya AI ajanlarıyla canlı bir şekilde çalışıp, anında mobil cihazda test etmek için şu adımları izleyin:
+
+### 1. GitHub Codespaces (Canlı IDE)
+- GitHub repository sayfanızda **Code** butonuna tıklayın ve **Open with Codespaces** seçeneğini seçin.
+- Bu, projeyi tarayıcıda hazır bir geliştirme ortamıyla açacaktır.
+
+### 2. QR Kod ile Mobilde Canlı Test (Tunneling)
+Terminalden QR kod alıp telefonunuzdaki **Expo Go** uygulamasıyla uzak bir sunucudan test etmek için şu komutları sırasıyla yazın:
+
+```bash
+# 1. Önce uygulama klasörüne girin
+cd rebalance-app
+
+# 2. Tunnel moduyla başlatın
+npx expo start --tunnel
+```
+
+- Bu komut çalıştıktan sonra terminalde çıkan **QR kodu** telefonunuzun kamerasıyla veya Expo Go uygulamasıyla taratın.
+- Artık dünyanın neresinde olursanız olun, projedeki canlı değişiklikleri telefonunuzda anlık olarak görebilirsiniz. ✨
 
 ---
 
