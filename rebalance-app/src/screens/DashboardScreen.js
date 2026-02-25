@@ -988,7 +988,7 @@ export default function DashboardScreen() {
             <StatusBar
                 barStyle={isDarkMode ? "light-content" : "dark-content"}
                 backgroundColor={theme.surface}
-                translucent={false}
+                translucent={!!false}
             />
 
             {/* Main Content Wrapper for Web Centering */}
@@ -1227,7 +1227,7 @@ export default function DashboardScreen() {
                                             disabled={searching}
                                         >
                                             {searching ? (
-                                                <ActivityIndicator size="small" color={theme.white} />
+                                                <ActivityIndicator size="small" color={theme.white} animating={!!true} />
                                             ) : (
                                                 <Ionicons name="arrow-forward" size={20} color={theme.white} />
                                             )}
@@ -1270,7 +1270,7 @@ export default function DashboardScreen() {
                                         ) : (
                                             searching ? (
                                                 <View style={styles.centerContent}>
-                                                    <ActivityIndicator size="large" color={theme.primary} />
+                                                    <ActivityIndicator size="large" color={theme.primary} animating={!!true} />
                                                     <Text style={styles.searchingText}>Searching...</Text>
                                                 </View>
                                             ) : hasSearched && searchResults.length === 0 ? (
@@ -1368,7 +1368,7 @@ export default function DashboardScreen() {
                             <View style={styles.suggestionBody}>
                                 {isSuggestionLoading ? (
                                     <View style={styles.suggestionLoading}>
-                                        <ActivityIndicator size="large" color={theme.primary} />
+                                        <ActivityIndicator size="large" color={theme.primary} animating={!!true} />
                                         <Text style={styles.suggestionLoadingText}>Calculating perfect meal...</Text>
                                     </View>
                                 ) : (
@@ -1599,7 +1599,7 @@ export default function DashboardScreen() {
 
                             {isWeeklyLoading ? (
                                 <View style={styles.trendsLoading}>
-                                    <ActivityIndicator size="large" color={theme.primary} animating={true} />
+                                    <ActivityIndicator size="large" color={theme.primary} animating={!!true} />
                                     <Text style={styles.loadingText}>Analiz ediliyor...</Text>
                                 </View>
                             ) : (
@@ -1663,7 +1663,7 @@ export default function DashboardScreen() {
                                         disabled={isExportingPDF}
                                     >
                                         {isExportingPDF ? (
-                                            <ActivityIndicator color="white" animating={true} />
+                                            <ActivityIndicator color="white" animating={!!true} />
                                         ) : (
                                             <>
                                                 <Ionicons name="document-text-outline" size={20} color="white" />
@@ -1760,7 +1760,7 @@ export default function DashboardScreen() {
                                         disabled={isRecipeLoading}
                                     >
                                         {isRecipeLoading ? (
-                                            <ActivityIndicator color="white" />
+                                            <ActivityIndicator color="white" animating={!!isRecipeLoading} />
                                         ) : (
                                             <>
                                                 <Text style={styles.confirmButtonText}>Tarif Oluştur</Text>

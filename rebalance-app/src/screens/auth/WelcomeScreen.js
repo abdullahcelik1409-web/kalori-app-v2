@@ -69,12 +69,15 @@ export default function WelcomeScreen({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#000000" translucent={false} />
+            <StatusBar barStyle="light-content" backgroundColor="#000000" translucent={!!false} />
 
             <ScrollView contentContainerStyle={{ flexGrow: 1 }} bounces={false}>
                 <View style={styles.content}>
                     {/* Background Blobs Layer */}
-                    <View style={[StyleSheet.absoluteFillObject, { pointerEvents: 'none' }]}>
+                    <View
+                        style={StyleSheet.absoluteFillObject}
+                        pointerEvents="none"
+                    >
                         <Animated.View style={[
                             styles.blob,
                             styles.blob1,

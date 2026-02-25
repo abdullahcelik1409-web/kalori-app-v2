@@ -33,7 +33,7 @@ export default function Button({ title, onPress, variant = 'primary', loading = 
             activeOpacity={0.8}
         >
             {loading ? (
-                <ActivityIndicator color={textColor} />
+                <ActivityIndicator color={textColor} animating={!!loading} />
             ) : (
                 <View style={styles.contentContainer}>
                     {icon && <View style={styles.iconWrapper}>{icon}</View>}

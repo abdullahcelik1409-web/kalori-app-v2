@@ -84,7 +84,7 @@ export default function App() {
     return (
       <View style={styles.center}>
         <Text style={styles.loadingText}>Yükleniyor...</Text>
-        <ActivityIndicator size="large" color={colors?.primary || '#10B981'} />
+        <ActivityIndicator size="large" color={colors?.primary || '#10B981'} animating={!!loading} />
       </View>
     );
   }
