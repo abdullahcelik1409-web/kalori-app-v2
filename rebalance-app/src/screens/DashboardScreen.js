@@ -1576,7 +1576,7 @@ export default function DashboardScreen() {
 
                 {aiLoading && (
                     <View style={[StyleSheet.absoluteFill, styles.loadingOverlay]}>
-                        <ActivityIndicator size="large" color={theme.primary} animating={true} />
+                        <ActivityIndicator size="large" color={theme.primary} animating={!!aiLoading} />
                         <Text style={styles.loadingText}>AI Analiz Ediyor...</Text>
                     </View>
                 )}
