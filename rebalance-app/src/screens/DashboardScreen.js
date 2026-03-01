@@ -1109,7 +1109,7 @@ export default function DashboardScreen() {
                         </View>
 
                         <ScrollView
-                            horizontal
+                            horizontal={true}
                             showsHorizontalScrollIndicator={false}
                             style={styles.waterScroll}
                             contentContainerStyle={styles.waterGrid}
